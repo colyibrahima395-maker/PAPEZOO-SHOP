@@ -1,0 +1,270 @@
+/* =========================
+   PAPEZOO SHOP - DESIGN
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f8;
+    color: #18181b;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+/* MENU */
+nav {
+    background: white;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: #18181b;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* CONTENU */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* PRODUITS */
+.produits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+article {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.13);
+}
+
+/* PHOTOS */
+article img {
+    display: block;
+    width: 170px !important;
+    height: 170px !important;
+    object-fit: cover;
+    border-radius: 14px;
+    margin: 0 auto 18px;
+}
+
+article h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+article p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+/* BOUTONS */
+button {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 18px;
+    background: #111827;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+/* PANIER */
+#panier {
+    max-width: 800px;
+    margin: 25px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#panier div {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#panier button {
+    margin: 5px;
+    padding: 8px 12px;
+}
+
+#total {
+    font-size: 22px;
+}
+
+/* FORMULAIRE */
+#formulaireCommande {
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#formulaireCommande label {
+    font-weight: 700;
+}
+
+#formulaireCommande input,
+#formulaireCommande textarea {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+#formulaireCommande input:focus,
+#formulaireCommande textarea:focus {
+    border-color: #2563eb;
+}
+
+#formulaireCommande textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* PAIEMENT */
+.paiement {
+    max-width: 500px;
+    margin: 35px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.paiement button {
+    margin: 7px;
+}
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .produits {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    article img {
+        width: 160px !important;
+        height: 160px !important;
+    }
+
+    main h2 {
+        font-size: 25px;
+    }
+
+    #formulaireCommande,
+    .paiement {
+        padding: 20px;
+    }
+}
+.hero-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: white;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background: #e5e7eb;
+}

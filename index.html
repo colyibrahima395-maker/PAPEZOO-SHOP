@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PAPEZOO SHOP</title>
+
+    <link rel="stylesheet" href="STYLE .CSS">
+</head>
+
+<body>
+
+    <header>
+        <h1>🛍️ PAPEZOO SHOP</h1>
+        <p>Bienvenue dans LA  boutique de PAPEZOO SHOP en ligne</p>
+    </header>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Contact</a>
+        <a href="#">🛒 Panier</a>
+    </nav>
+
+    <main>
+
+        <h2>Nos produits</h2>
+
+        <section>
+
+            <article>
+                <img src="c:\Users\User\Desktop\PHOTOS\WhatsApp Image 2026-09-03 at 12.08.59.jpeg" alt="T-shirt">
+                <h3>T-shirt</h3>
+                <p>Prix : 5000 FCFA</p>
+               
+                <button onclick="ajouterAuPanier('T-shirt', 5000)">
+    Ajouter au panier
+</button>
+            </article>
+
+            <article>
+                <img src="c:\Users\User\Downloads\Pin de Angel Almazan em Snk em 2021 _ Papel de parede da nike, Looks hip hop, Fotografia de basquete _ Scarpe n… in 2022 _ Cute nike shoes, All nike shoes, White nike shoes.jpg" alt="Chaussures">
+                <h3>Chaussures</h3>
+                <p>Prix : 10.000 FCFA</p>
+                <button onclick="ajouterAuPanier('Chaussures', 10000)">
+    Ajouter au panier
+</button>
+            </article>
+
+            <article>
+                <img src="c:\Users\User\Downloads\télécharger (35).jpg" alt="Casquette">
+                <h3>Casque</h3>
+                <p>Prix : 15 000 FCFA</p>
+               <button onclick="ajouterAuPanier('Casque', 15000)">
+    Ajouter au panier
+</button>
+            </article>
+
+        </section>
+
+        <h2>🛒 Mon panier</h2>
+
+<div id="panier">
+    <p>Votre panier est vide.</p>
+</div>
+
+<h3>Total : <span id="total">0 FCFA</span></h3>
+
+<div class="paiement">
+    <h2>💳 Paiement</h2>
+
+    <label for="methode">Choisir le mode de paiement :</label>
+
+    <select id="methode">
+        <option value="">-- Choisir --</option>
+        <option value="Wave">Wave</option>
+        <option value="Orange Money">Orange Money</option>
+        <option value="Livraison">Paiement à la livraison</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="payer()">Payer maintenant</button>
+
+    <p id="messagePaiement"></p>
+</div>
+
+<h2>📦 Informations de livraison</h2>
+
+<form id="formulaireCommande">
+
+    <label for="nom">Nom complet :</label>
+    <br>
+    <input type="text" id="nom" placeholder="Votre nom" required>
+    <br><br>
+
+    <label for="telephone">Téléphone :</label>
+    <br>
+    <input type="tel" id="telephone" placeholder="numero" required>
+    <br><br>
+
+    <label for="adresse">Adresse :</label>
+    <br>
+    <textarea id="adresse" placeholder="Votre adresse" required></textarea>
+    <br><br>
+
+</form>
+
+<button type="button" onclick="commanderWhatsApp()">
+    📱 Commander sur WhatsApp
+</button>
+    </main>
+
+    <footer>
+        <p>PAPEZOO SHOP - Tous droits réservés disponible 7/7</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+</body>
+</html
